@@ -10,6 +10,7 @@ import { HocExample } from './examples/hoc-example.tsx'
 import { RenderExample } from './examples/render-example.tsx';
 import { SlotExample } from './examples/slot-example.tsx';
 import { PortalExample } from './examples/portal-example.tsx';
+import { OptimizationExample } from './examples/optimization-example.tsx';
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
   {
     path: "/portal",
     element: <PortalExample />,
+  },
+  {
+    path: "/optimization/*",
+    element: <OptimizationExample />,
   },
 ]);
 

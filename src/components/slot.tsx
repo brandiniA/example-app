@@ -8,13 +8,20 @@ interface SlotProps {
 // Slot component that delegates rendering to its child
 export const Slot = React.forwardRef<unknown, SlotProps>(
     ({ children, ...props }, ref) => {
-        const child = React.Children.only(children);
+        const child = React.Children.only(children) as React.ReactElement;
         
-        return React.cloneElement(child, {
+        // Create props object with proper typing
+        const childProps: React.JSX.IntrinsicAttributes & { ref?: React.Ref<unknown> } = {
             ...props,
-            ...child.props,
-            ref: ref,
-        });
+            ...(child.props as object),
+        };
+        
+        // Only add ref if it exists
+        if (ref) {
+            childProps.ref = ref;
+        }
+        
+        return React.cloneElement(child, childProps);
     }
 );
 

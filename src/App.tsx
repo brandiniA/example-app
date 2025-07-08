@@ -27,7 +27,7 @@ function App() {
 
       <div className="navigation" style={{ marginTop: '2rem' }}>
         <h2>Examples</h2>
-        <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
+        <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
           <Link to="/hoc" style={linkStyle}>
             HOC Example
           </Link>
@@ -39,6 +39,9 @@ function App() {
           </Link>
           <Link to="/portal" style={linkStyle}>
             Portal Example  
+          </Link>
+          <Link to="/optimization" style={linkStyle}>
+            Optimization Example  
           </Link>
         </div>
       </div>
