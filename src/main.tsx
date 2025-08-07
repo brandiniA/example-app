@@ -11,6 +11,8 @@ import { RenderExample } from './examples/render-example.tsx';
 import { SlotExample } from './examples/slot-example.tsx';
 import { PortalExample } from './examples/portal-example.tsx';
 import { OptimizationExample } from './examples/optimization-example.tsx';
+import ReactFundamentalsExample from './examples/react-fundamentals-example';
+import { ReactElementsChildrenPropsExample } from './examples/react-elements-children-props-example/react-elements-children-props-example.tsx';
 
 const router = createBrowserRouter([
   {
@@ -36,6 +38,14 @@ const router = createBrowserRouter([
   {
     path: "/optimization/*",
     element: <OptimizationExample />,
+  },
+  {
+    path: "/react-fundamentals",
+    element: <ReactFundamentalsExample />,
+  },
+  {
+    path: "/react-elements-children-props",
+    element: <ReactElementsChildrenPropsExample />,
   },
 ]);
 

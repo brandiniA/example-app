@@ -43,6 +43,12 @@ function App() {
           <Link to="/optimization" style={linkStyle}>
             Optimization Example  
           </Link>
+          <Link to="/react-fundamentals" style={linkStyle}>
+            React Fundamentals Example
+          </Link>
+          <Link to="/react-elements-children-props" style={linkStyle}>
+            React Elements, Children as Props Example
+          </Link>
         </div>
       </div>
       
