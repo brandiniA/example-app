@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { RenderCounter } from './RenderCounter';
 
 // Componente para demostrar React.memo
 const MemoizedComponent = React.memo(({ name, count }: { name: string; count: number }) => {
@@ -11,6 +12,7 @@ const MemoizedComponent = React.memo(({ name, count }: { name: string; count: nu
       backgroundColor: '#f6ffed',
       borderRadius: '4px'
     }}>
+      <RenderCounter name="MemoizedComponent" />
       <p style={{ color: 'black', margin: '0 0 5px 0' }}>Componente Memoizado: {name}</p>
       <p style={{ color: 'black', margin: 0 }}>Contador: {count}</p>
     </div>
@@ -27,6 +29,7 @@ const RegularComponent = ({ name, count }: { name: string; count: number }) => {
       backgroundColor: '#fafafa',
       borderRadius: '4px'
     }}>
+      <RenderCounter name="RegularComponent" />
       <p style={{ color: 'black', margin: '0 0 5px 0' }}>Componente Regular: {name}</p>
       <p style={{ color: 'black', margin: 0 }}>Contador: {count}</p>
     </div>
