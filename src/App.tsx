@@ -49,6 +49,12 @@ function App() {
           <Link to="/react-elements-children-props" style={linkStyle}>
             React Elements, Children as Props Example
           </Link>
+          <Link to="/elements-as-props" style={linkStyle}>
+            Elements as Props Example
+          </Link>
+          <Link to="/advanced-render-props" style={linkStyle}>
+            Advanced Render Props Example
+          </Link>
         </div>
       </div>
       

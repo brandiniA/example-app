@@ -13,6 +13,8 @@ import { PortalExample } from './examples/portal-example.tsx';
 import { OptimizationExample } from './examples/optimization-example.tsx';
 import ReactFundamentalsExample from './examples/react-fundamentals-example';
 import { ReactElementsChildrenPropsExample } from './examples/react-elements-children-props-example/react-elements-children-props-example.tsx';
+import { ElementosComoProps } from './examples/elementos-como-props/elementos-como-props.tsx';
+import { RenderPropsAvanzado } from './examples/render-props-avanzado/render-props-avanzado.tsx';
 
 const router = createBrowserRouter([
   {
@@ -46,6 +48,14 @@ const router = createBrowserRouter([
   {
     path: "/react-elements-children-props",
     element: <ReactElementsChildrenPropsExample />,
+  },
+  {
+    path: "/elements-as-props",
+    element: <ElementosComoProps />,
+  },
+  {
+    path: "/advanced-render-props",
+    element: <RenderPropsAvanzado />,
   },
 ]);
 
