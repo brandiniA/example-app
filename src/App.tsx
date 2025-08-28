@@ -46,8 +46,11 @@ function App() {
           <Link to="/react-fundamentals" style={linkStyle}>
             React Fundamentals Example
           </Link>
-          <Link to="/react-elements-children-props" style={linkStyle}>
+          {/* <Link to="/react-elements-children-props" style={linkStyle}>
             React Elements, Children as Props Example
+          </Link> */}
+          <Link to="/react-elements-children-props" style={linkStyle}>
+            React Elements, Children as Props Flow
           </Link>
           <Link to="/elements-as-props" style={linkStyle}>
             Elements as Props Example

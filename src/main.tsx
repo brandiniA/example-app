@@ -15,6 +15,7 @@ import ReactFundamentalsExample from './examples/react-fundamentals-example';
 import { ReactElementsChildrenPropsExample } from './examples/react-elements-children-props-example/react-elements-children-props-example.tsx';
 import { ElementosComoProps } from './examples/elementos-como-props/elementos-como-props.tsx';
 import { RenderPropsAvanzado } from './examples/render-props-avanzado/render-props-avanzado.tsx';
+import { ReactElementsChildrenPropsFlow } from './examples/react-elements-children-props-flow/react-elements-children-props-flow.tsx';
 
 const router = createBrowserRouter([
   {
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
   {
     path: "/advanced-render-props",
     element: <RenderPropsAvanzado />,
+  },
+  {
+    path: "/react-elements-children-props-flow",
+    element: <ReactElementsChildrenPropsFlow />,
   },
 ]);
 

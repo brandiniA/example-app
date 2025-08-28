@@ -8,7 +8,6 @@ import {
   BunchOfStuff,
   OtherStuffAlsoComplicated
 } from './components/ScrollableWithMovingBlockExample';
-import { RenderCounter } from './components/RenderCounter';
 
 // Componente principal
 export const ReactElementsChildrenPropsExample = () => {
